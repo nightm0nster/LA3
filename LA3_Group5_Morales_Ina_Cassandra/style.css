@@ -1,0 +1,177 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin: 0 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+ nav a:hover {
+  color: #ccc;
+  border-bottom: 2px solid #fff;
+}
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .artist,
+  .music {
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 200px;
+    border: 2px solid #000000;
+    padding: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .artist:hover,
+  .music:hover {
+    transform: scale(1.05);
+  }
+  
+  .artist img,
+  .music img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 250px;
+    border-radius: 5px;
+  }
+  
+  .artist h3,
+  .music h3 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 1366px) {
+    .artist,
+    .music {
+      max-width: 25%;
+      margin: 0;
+    }
+  }
+  
+  @media (max-width: 936px) {
+    nav li {
+      margin: 0 10px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .artist,
+    .music {
+      max-width: 50%;
+    }
+  
+    nav {
+      flex-direction: column;
+    }
+  
+    nav li {
+      margin: 10px 0;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    h2 {
+      font-size: 16px;
+    }
+  
+    .artist,
+    .music {
+      max-width: 100%;
+      margin: 0;
+    }
+  
+    nav a {
+      font-size: 14px;
+    }
+  
+    footer {
+      font-size: 14px;
+    }
+  }
+  
+  @media (orientation: landscape) {
+    .artist,
+    .music {
+      max-width: 20%;
+    }
+  }
+  
+  @media (orientation: portrait) {
+    .artist,
+    .music {
+      max-width: 50%;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    #featured-artists {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 501px) and (max-width: 900px) {
+    #featured-music {
+      display: none;
+    }
+  }
+  
